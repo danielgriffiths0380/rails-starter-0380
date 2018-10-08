@@ -51,14 +51,15 @@
   <%= yield :head %>
 </head>
 <body>
-
-  <%= content_for?(:content) ? yield(:content) : yield %>
   
   <%= flash.each do |name, msg| %>
     <ul>
       <li><%= msg %></li>
     </ul>
   <% end %>
-
+  
+  <%= content_for?(:content) ? yield(:content) : yield %>
+  
+  
 </body>
 </html>
