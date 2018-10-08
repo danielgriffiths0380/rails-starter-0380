@@ -1,36 +1,38 @@
-<% content_for :styles do %>
-  <%= stylesheet_link_tag 'bootstrap-datepicker/bootstrap-datepicker.css', media: 'all' %>
-  <%= stylesheet_link_tag 'bootstrap-table/bootstrap-table.css', media: 'all' %>
-<% end %>
+<% content_for :content do %>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-1">
+    <div class="layout-inner">
 
-<% content_for :scripts do %>
-  <!-- Dependencies -->
-  <%= javascript_include_tag 'tableexport/tableexport.js' %>
-  <%= javascript_include_tag 'moment/moment.js' %>
-  <%= javascript_include_tag 'bootstrap-datepicker/bootstrap-datepicker.js' %>
-  
-  <%= javascript_include_tag 'bootstrap-table/bootstrap-table.js' %>
-  <%= javascript_include_tag 'bootstrap-table/extensions/export/export.js' %>
-  
-  <%= javascript_include_tag 'tables_bootstrap-table.js' %>
-<% end %>
+      <!-- Layout navbar -->
+      <%= render "layouts/partials/layout-navbar" %>
 
-<!-- Content -->
+      <!-- Layout container -->
+      <div class="layout-container">
+        <!-- Layout sidenav -->
+        <%= render "layouts/partials/layout-sidenav" %>
+
+        <!-- Layout content -->
+        <div class="layout-content">
+
+          <!-- Content -->
           <div class="container-fluid flex-grow-1 container-p-y">
-
-            <h4 class="font-weight-bold py-3 mb-4">
-              <span class="text-muted font-weight-light">Tables /</span> Bootstrap table
-            </h4>
-
-            <div id="bootstrap-table-toolbar">
-              <button id="bootstrap-table-remove" class="btn btn-danger" disabled>
-                <i class="ion ion-md-close"></i> Delete
-              </button>
-            </div>
-
-            <table id="bootstrap-table-example" data-toolbar="#bootstrap-table-toolbar" data-search="true" data-show-refresh="true" data-show-columns="true" data-show-export="true" data-detail-view="true" data-minimum-count-columns="2" data-show-pagination-switch="true"
-              data-pagination="true" data-id-field="id" data-show-footer="true" data-url="assets/json/bootstrap-table-data.json">
-            </table>
-
+            <%= yield %>
           </div>
-<!-- / Content -->
+          <!-- / Content -->
+
+          <!-- Layout footer -->
+          <%= render "layouts/partials/layout-footer" %>
+        </div>
+        <!-- Layout content -->
+
+      </div>
+      <!-- / Layout container -->
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+<% end %>
+<%= render template: "layouts/application" %>

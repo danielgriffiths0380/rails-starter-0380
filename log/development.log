@@ -5048,3 +5048,568 @@ Processing by ArticlesController#edit as HTML
 Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for 86.27.30.209 at 2018-10-08 18:25:50 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered home/index.html.erb within layouts/main/layout-1 (743.1ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/application.html.erb (79.9ms)
+Completed 200 OK in 840ms (Views: 831.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 18:25:56 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (8.5ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/application.html.erb (98.3ms)
+Completed 200 OK in 116ms (Views: 113.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 86.27.30.209 at 2018-10-08 18:25:59 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/main/layout-1
+  Rendered articles/_form.html.erb (8.3ms)
+  Rendered articles/new.html.erb within layouts/main/layout-1 (9.4ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.8ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (1.1ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/application.html.erb (80.0ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 18:27:08 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (3.0ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/application.html.erb (65.5ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1/edit" for 86.27.30.209 at 2018-10-08 18:27:10 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:11
+  Rendering articles/edit.html.erb within layouts/main/layout-1
+  Rendered articles/_form.html.erb (1.7ms)
+  Rendered articles/edit.html.erb within layouts/main/layout-1 (2.7ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.6ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/application.html.erb (61.2ms)
+Completed 200 OK in 79ms (Views: 70.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/1" for 86.27.30.209 at 2018-10-08 18:27:18 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VeK9AQMy40ZeAETfmRBQ2L9ZR3uA6ZtvWzQycgU+4NYNHzDoFLQmNRTsnJq97yYJ8PdrzlXDvH2PpN+HTbQ9tQ==", "article"=>{"title"=>"This is a title 1", "description"=>"Lorem ipsum dolor sit amet, consecteafdggrrgqeadipiscing elit. Nam et rhoncus risus. Quisque sollicitudin feugiat urna, semper placerat enim posuere ultricies"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:26
+  [1m[36mArticle Update (0.7ms)[0m  [1m[33mUPDATE "articles" SET "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["description", "Lorem ipsum dolor sit amet, consecteafdggrrgqeadipiscing elit. Nam et rhoncus risus. Quisque sollicitudin feugiat urna, semper placerat enim posuere ultricies"], ["updated_at", "2018-10-08 18:27:18.695804"], ["id", 1]]
+  ↳ app/controllers/articles_controller.rb:26
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:26
+Redirected to https://f9c0493febb74561b060a4be087f6e9e.vfs.cloud9.eu-west-1.amazonaws.com/articles/1
+Completed 302 Found in 13ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/articles/1" for 86.27.30.209 at 2018-10-08 18:27:18 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:35
+  Rendering articles/show.html.erb within layouts/main/layout-1
+  Rendered articles/show.html.erb within layouts/main/layout-1 (0.6ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.6ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/application.html.erb (57.7ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/1" for 86.27.30.209 at 2018-10-08 18:30:49 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:35
+  Rendering articles/show.html.erb within layouts/main/layout-1
+  Rendered articles/show.html.erb within layouts/main/layout-1 (0.6ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.6ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/application.html.erb (68.7ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Missing partial partials/_messages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ec2-user/environment/rails-starter/app/views"
+):
+    51:   <%= yield :head %>
+    52: </head>
+    53: <body>
+    54:   <%= render 'partials/messages' %>
+    55:   
+    56:   <%= content_for?(:content) ? yield(:content) : yield %>
+    57:   
+  
+app/views/layouts/application.html.erb:54:in `_app_views_layouts_application_html_erb___2941153787881911378_70095213702560'
+app/views/layouts/main/layout-1.html.erb:38:in `_app_views_layouts_main_layout___html_erb___436257825097539669_70095214054860'
+Started GET "/articles/1" for 86.27.30.209 at 2018-10-08 18:31:38 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:35
+  Rendering articles/show.html.erb within layouts/main/layout-1
+  Rendered articles/show.html.erb within layouts/main/layout-1 (0.7ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (66.9ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 18:31:43 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (2.9ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (66.6ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 18:37:48 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  Rendered articles/index.html.erb within layouts/main/layout-1 (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/rails-starter/app/views/articles/index.html.erb:19: unknown regexp options - tr
+/home/ec2-user/environment/rails-starter/app/views/articles/index.html.erb:20: syntax error, unexpected '<'
+    <% end );@output_buffer.safe_ap
+     ^
+/home/ec2-user/environment/rails-starter/app/views/articles/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articles/index.html.erb:19: unknown regexp options - tr
+app/views/articles/index.html.erb:20: syntax error, unexpected '<'
+app/views/articles/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 18:39:34 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (8.6ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (63.3ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/articles/1" for 86.27.30.209 at 2018-10-08 18:39:39 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CdpjJORfLb/2kvV5XlXWAesjNNI5X3OsPZun+UTMCJ8v5s5vcn5qQn5WyHbfXOgZ/bZvI5pGtAV+7K/meKPYgA==", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:40
+  [1m[36mArticle Destroy (0.6ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/articles_controller.rb:40
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:40
+Redirected to https://f9c0493febb74561b060a4be087f6e9e.vfs.cloud9.eu-west-1.amazonaws.com/articles
+Completed 302 Found in 12ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 18:39:39 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (3.1ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.8ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (62.7ms)
+Completed 200 OK in 74ms (Views: 72.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 86.27.30.209 at 2018-10-08 18:42:28 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered home/index.html.erb within layouts/main/layout-1 (17.3ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (59.7ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 86.27.30.209 at 2018-10-08 18:43:15 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (63.9ms)
+  Rendered home/index.html.erb within layouts/main/layout-1 (69.0ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.1ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.2ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.0ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.0ms)
+  Rendered layouts/application.html.erb (18.2ms)
+Completed 200 OK in 94ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page-2" for 86.27.30.209 at 2018-10-08 18:43:40 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Page2Controller#index as HTML
+  Rendering page2/index.html.erb within layouts/main/layout-1
+  Rendered page2/index.html.erb within layouts/main/layout-1 (0.3ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (61.4ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 86.27.30.209 at 2018-10-08 18:43:40 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (1.0ms)
+  Rendered layouts/application.html.erb (78.6ms)
+  Rendered home/index.html.erb within layouts/main/layout-1 (83.8ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.1ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.2ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.0ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.1ms)
+  Rendered layouts/application.html.erb (38.9ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 86.27.30.209 at 2018-10-08 18:43:42 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (1.3ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (71.7ms)
+  Rendered home/index.html.erb within layouts/main/layout-1 (79.3ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.1ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.2ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.0ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.0ms)
+  Rendered layouts/application.html.erb (19.2ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 86.27.30.209 at 2018-10-08 18:43:42 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered layouts/partials/_layout-navbar.html.erb (1.0ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.8ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (60.9ms)
+  Rendered home/index.html.erb within layouts/main/layout-1 (66.7ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.1ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.2ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.0ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.0ms)
+  Rendered layouts/application.html.erb (19.2ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 86.27.30.209 at 2018-10-08 18:43:43 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered layouts/partials/_layout-navbar.html.erb (4.8ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (57.3ms)
+  Rendered home/index.html.erb within layouts/main/layout-1 (66.7ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.1ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.2ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.0ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.0ms)
+  Rendered layouts/application.html.erb (24.5ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 86.27.30.209 at 2018-10-08 19:59:14 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/main/layout-1
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.8ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.5ms)
+  Rendered layouts/application.html.erb (2583.0ms)
+  Rendered home/index.html.erb within layouts/main/layout-1 (2598.1ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.1ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.3ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.0ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.0ms)
+  Rendered layouts/application.html.erb (16.8ms)
+Completed 200 OK in 2631ms (Views: 2623.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 19:59:25 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (9.4ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (65.7ms)
+Completed 200 OK in 90ms (Views: 85.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 86.27.30.209 at 2018-10-08 19:59:30 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/main/layout-1
+  Rendered articles/_form.html.erb (12.5ms)
+  Rendered articles/new.html.erb within layouts/main/layout-1 (14.2ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (59.4ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 20:00:57 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (3.7ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.5ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (58.6ms)
+Completed 200 OK in 70ms (Views: 67.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/2/edit" for 86.27.30.209 at 2018-10-08 20:00:58 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:46
+  Rendering articles/edit.html.erb within layouts/main/layout-1
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/edit.html.erb within layouts/main/layout-1 (2.9ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (63.2ms)
+Completed 200 OK in 84ms (Views: 73.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/2" for 86.27.30.209 at 2018-10-08 20:01:03 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TA1tf6i2DMdrwcQR4rakN/Vt6ZylDK8IgNM+LokgsyYAchPFM+you9Wopt7wWwJIwApQVcG2BT2MzbDCi385kQ==", "article"=>{"title"=>"This is a title 0380", "description"=>"fermentum. Sed quis gravida massa. Duismod auctor est nec pulvinar. Maecenas aliquam ullamcorper nisl, at lobortis mag"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:46
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:26
+  [1m[36mArticle Update (0.7ms)[0m  [1m[33mUPDATE "articles" SET "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["description", "fermentum. Sed quis gravida massa. Duismod auctor est nec pulvinar. Maecenas aliquam ullamcorper nisl, at lobortis mag"], ["updated_at", "2018-10-08 20:01:03.198865"], ["id", 2]]
+  ↳ app/controllers/articles_controller.rb:26
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:26
+Redirected to https://f9c0493febb74561b060a4be087f6e9e.vfs.cloud9.eu-west-1.amazonaws.com/articles/2
+Completed 302 Found in 14ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/articles/2" for 86.27.30.209 at 2018-10-08 20:01:03 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:46
+  Rendering articles/show.html.erb within layouts/main/layout-1
+  Rendered articles/show.html.erb within layouts/main/layout-1 (0.6ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.6ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (55.0ms)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 20:01:05 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (3.0ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.6ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (56.2ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 86.27.30.209 at 2018-10-08 20:01:07 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/main/layout-1
+  Rendered articles/_form.html.erb (1.6ms)
+  Rendered articles/new.html.erb within layouts/main/layout-1 (2.7ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.6ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (54.5ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 86.27.30.209 at 2018-10-08 20:01:14 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tTTncNy3Mr+4Z49WjfCncxIHmFscELpQqfL8EIujUE0jgmwousV1LZL3pEPCmChJD2CTWGBTW59268DuP8C81w==", "article"=>{"title"=>"This is a title 0380/76", "description"=>"kjbblbilnimp;np;"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:17
+  [1m[36mArticle Create (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "This is a title 0380/76"], ["description", "kjbblbilnimp;np;"], ["created_at", "2018-10-08 20:01:14.494574"], ["updated_at", "2018-10-08 20:01:14.494574"]]
+  ↳ app/controllers/articles_controller.rb:17
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:17
+Redirected to https://f9c0493febb74561b060a4be087f6e9e.vfs.cloud9.eu-west-1.amazonaws.com/articles/9
+Completed 302 Found in 10ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/articles/9" for 86.27.30.209 at 2018-10-08 20:01:14 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:46
+  Rendering articles/show.html.erb within layouts/main/layout-1
+  Rendered articles/show.html.erb within layouts/main/layout-1 (0.7ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.7ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.2ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (58.1ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 86.27.30.209 at 2018-10-08 20:01:16 +0000
+Cannot render console from 86.27.30.209! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/main/layout-1
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:12
+  Rendered articles/index.html.erb within layouts/main/layout-1 (3.0ms)
+  Rendered layouts/partials/_layout-navbar.html.erb (0.4ms)
+  Rendered layouts/partials/_layout-sidenav.html.erb (0.6ms)
+  Rendered layouts/partials/_layout-footer.html.erb (0.3ms)
+  Rendering layouts/application.html.erb
+  Rendered layouts/partials/_messages.html.erb (0.4ms)
+  Rendered layouts/application.html.erb (61.3ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.2ms)
+
+

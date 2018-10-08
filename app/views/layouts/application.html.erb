@@ -51,12 +51,7 @@
   <%= yield :head %>
 </head>
 <body>
-  
-  <%= flash.each do |name, msg| %>
-    <ul>
-      <li><%= msg %></li>
-    </ul>
-  <% end %>
+  <%= render 'layouts/partials/messages' %>
   
   <%= content_for?(:content) ? yield(:content) : yield %>
   
