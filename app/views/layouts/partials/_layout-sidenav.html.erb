@@ -15,6 +15,12 @@
         <i class="sidenav-icon ion ion-md-desktop"></i><div>Page 2</div>
       <% end %>
     </li>
+    
+    <li class="sidenav-item<%= current_page?(articles_path) ? ' active' : '' %>">
+      <%= link_to articles_path, class: "sidenav-link" do %>
+        <i class="sidenav-icon ion ion-md-desktop"></i><div>Articles</div>
+      <% end %>
+    </li>
 
   </ul>
 </div>
